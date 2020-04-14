@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700,900&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- media rtl css for responsive -->
+        <!-- <link href="css/jquery.slimscroll.css" rel="stylesheet"> -->
+        <title>I Start Arabic</title>
+    </head>
+    <body class="page-header-fixed page-sidebar-fixed test-page questions-page">
+        <div id="loading">
+            <div class="svg-icon-loader">
+                <img src="img/three-dots.svg" width="40" alt="">
+            </div>
+        </div>
+        <div class="page-container d-flex flex-column align-items-center justify-content-center">
+            <div class="test-page-box d-flex flex-column align-items-center justify-content-center">
+                <div class="test-page-logo d-flex align-items-start justify-content-start">
+                    <a href="#"><img class="logo-default" alt="logo" src="img/logo.svg"></a>
+                </div>
+                <h1>Take the assestment test</h1>
+                <p>It takes about 30 minutes, and adapts to your level by getting harder (or easier) based on your answers, this will allow us to determine your level in Arabic</p>
+                <button class="btn">Start the test</button>
+                <a href="#">Take test later</a>
+                <!-- Remove after test -->
+                <span class="btn mt-3 test-pop-up">TEST POP-UP</span>
+                <!-- Remove after test -->
+            </div>
+        </div>
+        <div class="pop-up-wrapper score-popup intermediate">
+            <div class="pop-up-container d-flex">
+                <div class="pop-up-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                        <path id="Fill_1" data-name="Fill 1" d="M15,30A15,15,0,1,1,30,15,15.017,15.017,0,0,1,15,30Zm0-13.727h0l4.452,4.454a.9.9,0,1,0,1.273-1.273L16.272,15l4.454-4.455a.9.9,0,0,0-1.273-1.274L15,13.728,10.544,9.274a.9.9,0,0,0-1.273,1.272L13.727,15,9.273,19.454a.9.9,0,1,0,1.273,1.273L15,16.274Z" fill="#333"/>
+                      </svg>                      
+                </div>
+                <div class="pop-up-box d-flex align-items-center flex-column">
+                    <div class="points-box" data-points-score="75">
+                        <svg class="circle-chart" width="160" height="160">
+                            <circle class="circle-chart__background" fill="none" stroke="#DFE3E6" stroke-width="12.48" cx="80" cy="80" r="74"></circle>
+                            <circle class="circle-chart__circle" stroke-dasharray="465" stroke-dashoffset='465' stroke-width="12.48" stroke-linecap="round" fill="none" cx="80" cy="80" r="74"></circle>
+                            <g class="circle-chart__info">
+                            <text class="circle-chart__percent" x="80" y="80" alignment-baseline="central" text-anchor="middle" font-size="37">75%</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <h2>You scored</h2>
+                    <p>Your Arabic level is</p>
+                    <div class="score-lvl">
+                        <span>Beginner</span>
+                        <span class="active">Intermediate</span>
+                        <span>Advanced</span>
+                    </div>
+                    <button class="btn">Continue</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.2.1.min.js" ></script>
+        <script src="js/popper.min.js" ></script>
+        <script src="js/jquery.slimscroll.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
